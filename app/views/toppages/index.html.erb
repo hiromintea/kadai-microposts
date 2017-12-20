@@ -11,6 +11,7 @@
     <div class="col-xs-8">
       <%= render 'microposts/microposts', microposts: @microposts %>
     </div>
+    <%= link_to 'お気に入り投稿集', favorites_path, class: 'btn btn-lg btn-primary' %>
   </div>
 <% else %>
   <div class="center jumbotron">
